@@ -23,21 +23,21 @@ import AppIntroSlider from 'react-native-app-intro-slider';
 
 const slides = [
   {
-    key: 'one',
+    key: 1,
     title: 'Title 1',
     text: 'Description.\nSay something cool',
     image: require('./assets/1.jpg'),
     backgroundColor: '#59b2ab',
   },
   {
-    key: 'two',
+    key: 2,
     title: 'Title 2',
     text: 'Other cool stuff',
     image: require('./assets/2.jpg'),
     backgroundColor: '#febe29',
   },
   {
-    key: 'three',
+    key: 3,
     title: 'Rocket guy',
     text: 'I\'m already out of descriptions\n\nLorem ipsum bla bla bla',
     image: require('./assets/3.jpg'),
@@ -110,7 +110,7 @@ export default class App extends React.Component {
   _renderNextButton = () => {
     return (
       <View style={styles.buttonCircle}>
-        <Icon
+        <Ion
           name="md-arrow-round-forward"
           color="rgba(255, 255, 255, .9)"
           size={24}
@@ -121,7 +121,7 @@ export default class App extends React.Component {
   _renderDoneButton = () => {
     return (
       <View style={styles.buttonCircle}>
-        <Icon
+        <Ion
           name="md-checkmark"
           color="rgba(255, 255, 255, .9)"
           size={24}
@@ -184,9 +184,9 @@ The component extends `FlatList` so all FlatList-props are valid.
 
 
 ## Examples
-* [Basic](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/Basic/index.tsx)
-* [Bottom buttons](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/BottomButton/index.tsx)
-* [Custom buttons](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/CustomButtons/index.tsx)
-* [Custom pagination with log in / sign up buttons](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/CustomPagination/index.tsx)
-* [Full-size background Images](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/FullBackgroundImage/index.tsx)
-* [RTL](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/RTL/index.tsx)
+* [Basic](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/Basic/index.js)
+* [Bottom buttons](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/BottomButton/index.js)
+* [Custom buttons](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/CustomButtons/index.js)
+* [Custom pagination with log in / sign up buttons](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/CustomPagination/index.js)
+* [Full-size background Images](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/FullBackgroundImage/index.js)
+* [RTL](https://github.com/Jacse/react-native-app-intro-slider/tree/master/examples/examples/RTL/index.js)
