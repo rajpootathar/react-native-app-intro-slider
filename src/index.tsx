@@ -46,6 +46,7 @@ type Props<ItemT> = {
   showPrevButton: boolean;
   showSkipButton: boolean;
   bottomButton: boolean;
+  isPagination:boolean;
 } & FlatListProps<ItemT>;
 
 type State = {
@@ -75,6 +76,7 @@ export default class AppIntroSlider<ItemT = any> extends React.Component<
     showPrevButton: false,
     showSkipButton: false,
     bottomButton: false,
+    isPagination: true
   };
   state = {
     width: 0,
@@ -290,6 +292,7 @@ export default class AppIntroSlider<ItemT = any> extends React.Component<
       renderItem,
       data,
       extraData,
+      isPagination,
       ...otherProps
     } = this.props;
     /* eslint-enable @typescript-eslint/no-unused-vars */
@@ -315,9 +318,11 @@ export default class AppIntroSlider<ItemT = any> extends React.Component<
           initialNumToRender={data.length}
           {...otherProps}
         />
-        {renderPagination
+        { isPagination && (
+        renderPagination
           ? renderPagination(this.state.activeIndex)
-          : this._renderPagination()}
+          : this._renderPagination()
+         )}
       </View>
     );
   }
